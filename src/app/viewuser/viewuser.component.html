@@ -1,0 +1,25 @@
+<section class="py-5 bg-secondary">
+    <div class=" px-4 px-lg-5 mt-5 ">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+   
+<div class="col  ml-3 mb-5 me-4 card bg-dark" style="width: 20rem;" *ngFor="let user of userList['users']">
+    <img src="{{user.image}}" class="card-img-top" alt="no image">
+    <div class="card-body">
+      <h5 class="card-title" style="color: white;">{{user.id}}</h5>
+      <h2 class="card-text" style="color: white;" >{{user.firstName}} {{user.lastName}} </h2>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Date of Birth: </b>{{user.birthDate}} </li>
+      <li class="list-group-item"><b>Gender: </b>{{user.gender}}</li>
+      <li class="list-group-item"><b>Email: </b>{{user.email}}</li>
+      <li class="list-group-item"><b>Phone </b>{{user.phone}}</li>
+      <li class="list-group-item"><b>University </b>{{user.university}}</li>
+    </ul>
+    <!-- <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div> -->
+  </div>
+</div>
+</div>
+</section>
